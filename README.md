@@ -189,7 +189,7 @@ cd src
 Then, complete by specifying the classhpaths of the external libraries used and the destination folder of the ".class" files using the following syntax:
 
 ```bash
-$javac -cp classpath ./*.java -d directory 
+$ javac -cp classpath ./*.java -d directory 
 ```
 - **cp** *classpath*: specifies the path used by javac to search for classes needed to run javac or referenced by other classes being compiling. It replaces the default or the environment variable CLASSPATH, if set. The classpath parameter is the path in which the the external library is located (in this case I used the path .;./../libs/gson-.2.10.jar).
 
@@ -198,18 +198,18 @@ $javac -cp classpath ./*.java -d directory
 Once the compilation is complete we are in the src directory. To run the code we must then move to the bin folder, we execute the following commands:
 
 ```bash
-cd..
+cd ..
 cd bin
 ```
 
 Once we enter the bin folder (the path should be more or less C:\...\Wordle\bin) we are ready to execute the code, so we open two separate terminals (one for the Server and one for the Client and run with the following syntax:
 
 ```bash
-$java -cp classpath WordleServerMain
+$ java -cp classpath WordleServerMain
 ```
 
 ```bash
-$java -cp classpath WordleClientMain
+$ java -cp classpath WordleClientMain
 ```
 
 Here again we need to specify the classpath (which in this case is equal to before .;./../libs/gson-2.10.jar ) and the "-cp" option allows us to do this. The last path is the name of the class we want to run (excluding the".java" extension).
