@@ -17,7 +17,7 @@ named as follows:
         6. Request by the user to share the result of the match just finished;
         7. Request by the user to view the notifications sent by all the users belonging to the social group (related to its log in phase);
 
-- MulticastHandler.java: this file contains the code related to a thread, scheduled by the Client once the generic user has passed the login phase. In the run() method, such a thread continuously waits for "notifications" from the Server, which sends such notifications regarding the outcome of ageneric user's match only if that user has requested the view via command 7.
+- MulticastHandler.java: this file contains the code related to a thread, scheduled by the Client once the generic user has passed the login phase. In the run() method, such a thread continuously waits for "notifications" from the Server, which sends such notifications regarding the outcome of a generic user's match only if that user has requested the view via command 7.
 
 - User.java: represents what the basic characteristics of a user are and contains getter and setter methods. The characteristics related to a given user are:
 
